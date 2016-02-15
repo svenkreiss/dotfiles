@@ -1,0 +1,87 @@
+
+# source /Users/zween/physics/root_branch_v534/bin/thisroot.sh
+# source $ROOTSYS/bin/setxrd.sh /opt/xrootd/xrootd-3.1.0/
+
+export PATH=$ROOTSYS/bin:$PATH
+export LD_LIBRARY_PATH=$ROOTSYS/lib:$LD_LIBRARY_PATH
+export LD_LIBRARY_PATH=/Users/zween/tex/papers/ShapeFactory/ShapeFactory/lib:$LD_LIBRARY_PATH
+export PYTHONPATH=$ROOTSYS/lib:$PYTHONPATH
+
+# export PYTHONPATH=$ROOTSYS/tutorials/roostats/py:$PYTHONPATH
+export PYTHONPATH=~/physics/HiggsComb/Tools:$PYTHONPATH
+# export PYTHONPATH=~/physics/HiggsComb/Tools/ToolsInSVN/BatchPlugins:$PYTHONPATH
+export PYTHONPATH=~/physics/HiggsComb/Tools/Combiner/src:$PYTHONPATH
+
+# export PYTHONPATH=~/physics/decouple:$PYTHONPATH
+# export PYTHONPATH=~/physics/BatchLikelihoodScan:$PYTHONPATH
+# export PYTHONPATH=~/physics/PyROOTUtils:$PYTHONPATH
+# export PYTHONPATH=~/physics/LHCHiggsCouplings:$PYTHONPATH
+# export PATH=~/physics/decouple:$PATH
+
+export PATH=$PATH:~/physics/img2slides
+
+# export PATH=$PATH:${HOME}/physics
+# export HIGGSCOUPLINGDATA=/Users/zween/physics/Higgs-coupling-data_YR3
+
+
+## ATLAS SVN SETUP
+export SVNOFF=svn+ssh://skreiss@svn.cern.ch/reps/atlasoff
+export SVNGRP=svn+ssh://skreiss@svn.cern.ch/reps/atlasgrp
+export SVNPHYS=svn+ssh://skreiss@svn.cern.ch/reps/atlasphys
+export SVNPERF=svn+ssh://skreiss@svn.cern.ch/reps/atlasperf
+export SVNNYU=svn+ssh://skreiss@svn.cern.ch/reps/atlasnyu
+export SVNUSR=svn+ssh://skreiss@svn.cern.ch/reps/atlasusr
+
+
+setupHllll() {
+    source ~/physics/root_patches_v534/bin/thisroot.sh
+    cd ~/physics/Hllll_120903_local/
+}
+
+setupHllllSpinCP() {
+    source ~/physics/roostatsForCommit/bin/thisroot.sh
+    cd ~/physics/HllllStat/llllSpinCP0pm_120917/
+}
+
+setupHllllRel16() {
+    source ~/physics/root_patches_v532/bin/thisroot.sh
+
+    cd ~/physics/HllllRootCoreRel16/RootCore
+    source RootCore/scripts/setup.sh
+
+    cd ~/physics/HllllRootCoreRel16/SFrame
+    source setup.sh
+
+    cd ..
+}
+
+setupHllllRel17() {
+    source ~/physics/root_tag_v53006/bin/thisroot.sh
+
+    cd ~/physics/HllllRootCoreRel17/RootCore
+    source RootCore/scripts/setup.sh
+
+    cd ~/physics/HllllRootCoreRel17/SFrame
+    source setup.sh
+
+    cd ..
+}
+
+setupHllllStat() {
+    source ~/physics/root_patches_v534/bin/thisroot.sh
+    cd ~/physics/HllllStat
+}
+
+setupHiggsComb() {
+    ulimit -S -s 60000
+    source ~/physics/root_branch_v534/bin/thisroot.sh
+    cd ~/physics/HiggsComb/Tools
+    source venv/bin/activate
+
+    export HIGGSCOMBDATAPATH=~/physics/HiggsComb/combWS/
+}
+
+setupRooStatsTutorialHamburg2012() {
+    source ~/physics/root_patches_v532/bin/thisroot.sh
+    cd ~/physics/RooStatsTutorialHamburg2012
+}

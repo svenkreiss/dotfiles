@@ -1,0 +1,75 @@
+# IMPORTS
+source .secrets
+
+# torch
+. ${HOME}/torch/install/bin/torch-activate
+
+# ruby
+export RBENV_ROOT=/usr/local/var/rbenv
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+if [[ -s ${HOME}/.rvm/scripts/rvm ]]; then
+  source ${HOME}/.rvm/scripts/rvm;
+fi
+
+# python
+va() {
+    source venv/bin/activate
+}
+
+# hadoop
+alias hstart="/usr/local/Cellar/hadoop/2.7.0/sbin/start-dfs.sh;/usr/local/Cellar/hadoop/2.7.0/sbin/start-yarn.sh"
+alias hstop="/usr/local/Cellar/hadoop/2.7.0/sbin/stop-yarn.sh;/usr/local/Cellar/hadoop/2.7.0/sbin/stop-dfs.sh"
+
+# SIC
+export SIC_DATA_DIR=${HOME}/tech/wildcard/sic_data
+# pysparkling tests
+export S3_TEST_PATH=s3n://wildcard-datascience/sic
+export HDFS_TEST_PATH=hdfs://localhost:50070/user/hadoop
+# word2vec
+export WORD2VEC_FILENAME=${HOME}/tech/data_word2vec/GoogleNews-vectors-negative300.bin.gz
+
+# for homebrew
+export PATH=/usr/local/bin:~/bin:$PATH
+
+# Cuda
+export PATH=/Developer/NVIDIA/CUDA-7.5/bin:$PATH
+export DYLD_LIBRARY_PATH=/Developer/NVIDIA/CUDA-7.5/lib:$DYLD_LIBRARY_PATH
+
+# Machine Learning
+export PYTHONPATH=~/tech/Theano:$PYTHONPATH
+export THEANO_FLAGS="device=gpu"
+export PYTHONPATH=~/tech/pylearn2:$PYTHONPATH
+export PATH=~/tech/pylearn2/pylearn2/scripts:$PATH
+export PYLEARN2_DATA_PATH=${HOME}/tech/ml-data
+export PYLEARN2_VIEWER_COMMAND='open -Wn'
+
+# Go
+export GOPATH=${HOME}/tech/go
+export PATH=${HOME}/tech/go/bin:/usr/local/opt/go/libexec/bin:$PATH
+
+# Git
+if [ -f /Applications/Xcode.app/Contents/Developer/usr/share/git-core/git-completion.bash ]; then
+    . /Applications/Xcode.app/Contents/Developer/usr/share/git-core/git-completion.bash
+fi
+source /Applications/Xcode.app/Contents/Developer/usr/share/git-core/git-prompt.sh
+export PS1='\[\033[01;31m\][\h]\[\033[01;34m\]:\W$(__git_ps1) >\[\033[00m\] ';
+export GIT_PS1_SHOWDIRTYSTATE=1
+configureGit() {
+    git config --global color.ui auto
+    git config format.pretty oneline
+    git config --global user.name "Sven Kreiss"
+    git config --global user.email me@svenkreiss.com
+    git config --global credential.helper osxkeychain
+}
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
+
+# Android NDK
+export PATH="${HOME}/tech/android_ndk/android-ndk-r10e:$PATH"
+
+# The next line updates PATH for the Google Cloud SDK.
+source "${HOME}/tech/google-cloud-sdk/path.bash.inc"
+
+# The next line enables shell command completion for gcloud.
+source "${HOME}/tech/google-cloud-sdk/completion.bash.inc"
