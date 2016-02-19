@@ -2,7 +2,9 @@
 source .secrets
 
 # torch
-. ${HOME}/torch/install/bin/torch-activate
+if [ -d ${HOME}/torch ]; then
+    . ${HOME}/torch/install/bin/torch-activate
+fi
 
 # ruby
 export RBENV_ROOT=/usr/local/var/rbenv
@@ -68,8 +70,11 @@ export PATH="/usr/local/heroku/bin:$PATH"
 # Android NDK
 export PATH="${HOME}/tech/android_ndk/android-ndk-r10e:$PATH"
 
-# The next line updates PATH for the Google Cloud SDK.
-source "${HOME}/tech/google-cloud-sdk/path.bash.inc"
+# Google Cloud SDK
+if [ -d ${HOME}/tech/google-cloud-sdk ]; then
+    # The next line updates PATH for the Google Cloud SDK.
+    source "${HOME}/tech/google-cloud-sdk/path.bash.inc"
 
-# The next line enables shell command completion for gcloud.
-source "${HOME}/tech/google-cloud-sdk/completion.bash.inc"
+    # The next line enables shell command completion for gcloud.
+    source "${HOME}/tech/google-cloud-sdk/completion.bash.inc"
+fi
