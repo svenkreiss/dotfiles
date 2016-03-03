@@ -1,0 +1,36 @@
+{
+    "color_scheme": "Packages/User/SublimeLinter/Monokai Extended (SL).tmTheme",
+    "theme": "Soda Dark.sublime-theme",
+    "font_size": 13,
+    "rulers": [80],
+
+    "ignored_packages":
+    [
+        "Markdown",
+        "Vintage"
+    ],
+
+    // Whitespace
+    "tab_size": 4,
+    "translate_tabs_to_spaces": true,
+    "trim_trailing_white_space_on_save": true,
+    "ensure_newline_at_eof_on_save": true,
+
+    // Sidebar
+    "file_exclude_patterns":
+    [
+        ".DS_Store",
+        "*.pid",
+        "*.pyc"
+    ],
+    "folder_exclude_patterns":
+    [
+        ".git",
+        "__pycache__",
+        "venv",
+        "venv3",
+        "*.egg-info",
+        ".eggs",
+        ".ipynb_checkpoints"
+    ]
+}

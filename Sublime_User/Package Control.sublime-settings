@@ -1,0 +1,28 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"AdvancedNewFile",
+		"Anaconda",
+		"Emmet",
+		"Emmet Css Snippets",
+		"GitGutter",
+		"Handlebars",
+		"HTMLAttributes",
+		"Javatar",
+		"MarkdownEditing",
+		"Monokai Extended",
+		"Package Control",
+		"Pretty JSON",
+		"SideBarEnhancements",
+		"SublimeLinter",
+		"SublimeLinter-contrib-eslint",
+		"SublimeLinter-pep8",
+		"SublimeLinter-pyflakes",
+		"Theme - Soda",
+		"WordCount"
+	]
+}
