@@ -1,6 +1,9 @@
 # IMPORTS
 source .secrets
 
+# thefuck
+eval "$(thefuck --alias)"
+
 # torch
 if [ -d ${HOME}/torch ]; then
     . ${HOME}/torch/install/bin/torch-activate

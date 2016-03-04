@@ -14,3 +14,9 @@ iTerm2
 
 Use ``dotfiles`` is the custom location for preferences. Set it in the first
 tab of the general preferences view.
+
+
+thefuck
+-------
+
+``pip install the fuck``
