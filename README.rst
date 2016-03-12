@@ -1,9 +1,25 @@
 Misc
 ----
 
+Install homebrew from http://brew.sh/
+
 .. code-block:: bash
 
+    brew install python git bash-completion
+    pip install thefuck
+
+    git clone https://github.com/svenkreiss/dotfiles.git
     touch .secrets
+
+    # add "source dotfiles/.bash_profile" to ~/.bash_profile
+    configureGit()
+
+
+iTerm2
+------
+
+Use ``dotfiles`` is the custom location for preferences. Set it in the first
+tab of the general preferences view.
 
 
 Java
@@ -27,25 +43,3 @@ Then:
 
     mkdir bin
     ln -s /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl ~/bin/subl
-
-
-iTerm2
-------
-
-Use ``dotfiles`` is the custom location for preferences. Set it in the first
-tab of the general preferences view.
-
-
-Command line git completion
----------------------------
-
-.. code-block:: bash
-
-    brew install git bash-completion
-    configureGit()
-
-
-thefuck
--------
-
-``pip install thefuck``
