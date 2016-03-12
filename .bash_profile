@@ -60,6 +60,7 @@ if [ -f /Applications/Xcode.app/Contents/Developer/usr/share/git-core/git-comple
     . /Applications/Xcode.app/Contents/Developer/usr/share/git-core/git-completion.bash
 fi
 source /Applications/Xcode.app/Contents/Developer/usr/share/git-core/git-prompt.sh
+source /usr/local/etc/bash_completion.d/git-prompt.sh
 export PS1='\[\033[01;31m\][\h]\[\033[01;34m\]:\W$(__git_ps1) >\[\033[00m\] ';
 export GIT_PS1_SHOWDIRTYSTATE=1
 configureGit() {
