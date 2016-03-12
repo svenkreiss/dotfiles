@@ -43,3 +43,15 @@ Then:
 
     mkdir bin
     ln -s /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl ~/bin/subl
+
+
+Docker
+------
+
+Install Docker Machine from https://docs.docker.com/machine/install-machine/
+and VirtualBox from https://www.virtualbox.org/wiki/Downloads
+
+.. code-block:: bash
+
+    docker-machine create --driver=virtualbox default
+    eval $(docker-machine env)
