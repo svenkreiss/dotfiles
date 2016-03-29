@@ -14,6 +14,10 @@ Install homebrew from http://brew.sh/
     # add "source dotfiles/.bash_profile" to ~/.bash_profile
     configureGit()
 
+    # faster window animation speed
+    defaults write -g NSWindowResizeTime -float 0.01
+    # to revert: defaults delete -g NSWindowResizeTime
+
 
 iTerm2
 ------
