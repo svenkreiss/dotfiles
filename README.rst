@@ -59,3 +59,12 @@ and VirtualBox from https://www.virtualbox.org/wiki/Downloads
 
     docker-machine create --driver=virtualbox default
     eval $(docker-machine env)
+
+
+Git Helpers
+-----------
+
+.. code-block:: bash
+
+    cd tech; git clone https://github.com/ryan-williams/git-helpers/
+    pip install -r tech/git-helpers/requirements.txt
