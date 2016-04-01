@@ -26,6 +26,9 @@ va() {
     source venv/bin/activate
 }
 
+# node
+export PATH=node_modules/.bin:$PATH
+
 # hadoop
 if [ -f /usr/local/Cellar/hadoop/2.7.0/sbin/start-dfs.sh ]; then
     alias hstart="/usr/local/Cellar/hadoop/2.7.0/sbin/start-dfs.sh;/usr/local/Cellar/hadoop/2.7.0/sbin/start-yarn.sh"
