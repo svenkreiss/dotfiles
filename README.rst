@@ -12,6 +12,7 @@ Install homebrew from http://brew.sh/
     touch .secrets
 
     # add "source dotfiles/.bash_profile" to ~/.bash_profile
+    # echo "source dotfiles/.bash_profile" > .bash_profile
     configureGit()
 
     # faster window animation speed
