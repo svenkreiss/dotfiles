@@ -62,6 +62,20 @@ and VirtualBox from https://www.virtualbox.org/wiki/Downloads
     eval $(docker-machine env)
 
 
+Google Cloud
+------------
+
+.. code-block:: bash
+
+    curl https://sdk.cloud.google.com | bash  # when prompted, install to ~/tech/google-cloud-sdk
+    gcloud init  # select zone us-east1-b
+    gcloud components update kubectl
+
+    # setup credentials and kubectl
+    gcloud config set container/cluster CLUSTER_NAME
+    gcloud container clusters get-credentials CLUSTER_NAME
+
+
 Git Helpers
 -----------
 
