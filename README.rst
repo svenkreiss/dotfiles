@@ -68,4 +68,4 @@ Git Helpers
 .. code-block:: bash
 
     cd tech; git clone https://github.com/ryan-williams/git-helpers/
-    pip install -r tech/git-helpers/requirements.txt
+    pip install -r ~/tech/git-helpers/requirements.txt
