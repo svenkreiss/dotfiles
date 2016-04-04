@@ -26,6 +26,14 @@ va() {
     source venv/bin/activate
 }
 
+va2() {
+    source venv2/bin/activate
+}
+
+va3() {
+    source venv3/bin/activate
+}
+
 # node
 export PATH=node_modules/.bin:$PATH
 
