@@ -1,6 +1,11 @@
 # IMPORTS
 source .secrets
 
+# data
+if [ -d ${HOME}/tech/data_osm ]; then
+    export DATA_OSM=${HOME}/tech/data_osm
+fi
+
 # thefuck
 eval "$(thefuck --alias)"
 
