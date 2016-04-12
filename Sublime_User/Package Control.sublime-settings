@@ -8,12 +8,14 @@
 		"AdvancedNewFile",
 		"Anaconda",
 		"Babel",
+		"DocBlockr",
 		"Emmet",
 		"Emmet Css Snippets",
 		"GitGutter",
 		"Handlebars",
 		"HTMLAttributes",
 		"Javatar",
+		"JSHint",
 		"MarkdownEditing",
 		"Monokai Extended",
 		"Package Control",
@@ -24,6 +26,7 @@
 		"SublimeLinter-pep8",
 		"SublimeLinter-pyflakes",
 		"Theme - Soda",
+		"TypeScript",
 		"WordCount"
 	]
 }
