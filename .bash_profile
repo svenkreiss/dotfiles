@@ -50,10 +50,8 @@ if [ -f /usr/local/Cellar/hadoop/2.7.0/sbin/start-dfs.sh ]; then
     export HDFS_TEST_PATH=hdfs://localhost:50070/user/hadoop
 fi
 
-# SIC
-export SIC_DATA_DIR=${HOME}/tech/wildcard/sic_data
 # pysparkling tests
-export S3_TEST_PATH=s3n://wildcard-datascience/sic
+export S3_TEST_PATH=s3n://svenkreiss/pysparkling-testing
 # word2vec
 export WORD2VEC_FILENAME=${HOME}/tech/data_word2vec/GoogleNews-vectors-negative300.bin.gz
 
