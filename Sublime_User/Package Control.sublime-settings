@@ -23,8 +23,10 @@
 		"SideBarEnhancements",
 		"SublimeLinter",
 		"SublimeLinter-contrib-eslint",
+		"SublimeLinter-flake8",
 		"SublimeLinter-pep8",
 		"SublimeLinter-pyflakes",
+		"SublimeLinter-rst",
 		"Theme - Soda",
 		"TypeScript",
 		"WordCount"

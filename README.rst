@@ -19,6 +19,10 @@ Install homebrew from http://brew.sh/
     defaults write -g NSWindowResizeTime -float 0.01
     # to revert: defaults delete -g NSWindowResizeTime
 
+    # python linting in Sublime needs global installs
+    pip install flake8 hacking
+    pip3 install flake8 hacking
+
 
 iTerm2
 ------

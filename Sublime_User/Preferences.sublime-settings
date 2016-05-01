@@ -11,8 +11,7 @@
 	[
 		".git",
 		"__pycache__",
-		"venv",
-		"venv3",
+		"venv*",
 		"*.egg-info",
 		".eggs",
 		".ipynb_checkpoints"
@@ -30,5 +29,6 @@
 	"tab_size": 4,
 	"theme": "Soda Dark.sublime-theme",
 	"translate_tabs_to_spaces": true,
-	"trim_trailing_white_space_on_save": true
+	"trim_trailing_white_space_on_save": true,
+	"anaconda_linting": false
 }
