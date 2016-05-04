@@ -28,6 +28,16 @@ fi
 
 # python
 va() {
+    if [ -d venv3 ]; then
+        source venv3/bin/activate
+    elif [ -d venv ]; then
+        source venv/bin/activate
+    elif [ -d venv2 ]; then
+        source venv2/bin/activate
+    fi
+}
+
+va_() {
     source venv/bin/activate
 }
 

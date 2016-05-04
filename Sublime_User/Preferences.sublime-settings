@@ -1,4 +1,5 @@
 {
+	"anaconda_linting": false,
 	"color_scheme": "Packages/User/SublimeLinter/Monokai Extended (SL).tmTheme",
 	"ensure_newline_at_eof_on_save": true,
 	"file_exclude_patterns":
@@ -29,6 +30,5 @@
 	"tab_size": 4,
 	"theme": "Soda Dark.sublime-theme",
 	"translate_tabs_to_spaces": true,
-	"trim_trailing_white_space_on_save": true,
-	"anaconda_linting": false
+	"trim_trailing_white_space_on_save": true
 }
