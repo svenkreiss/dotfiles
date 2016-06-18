@@ -6,7 +6,8 @@
 	[
 		".DS_Store",
 		"*.pid",
-		"*.pyc"
+		"*.pyc",
+		"node_modules/"
 	],
 	"folder_exclude_patterns":
 	[
