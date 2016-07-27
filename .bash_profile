@@ -106,6 +106,10 @@ export PATH="/usr/local/heroku/bin:$PATH"
 # Android NDK
 export PATH="${HOME}/tech/android_ndk/android-ndk-r10e:$PATH"
 
+# Android
+export ANDROID_HOME=${HOME}/Library/Android/sdk
+export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
+
 # Google Cloud SDK
 if [ -d ${HOME}/tech/google-cloud-sdk ]; then
     # The next line updates PATH for the Google Cloud SDK.
