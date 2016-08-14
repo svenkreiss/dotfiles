@@ -120,4 +120,6 @@ if [ -d ${HOME}/tech/google-cloud-sdk ]; then
 fi
 
 # opencv
-export PYTHONPATH=/usr/local/lib/python2.7/site-packages:$PYTHONPATH
+activate_opencv() {
+    export PYTHONPATH=/usr/local/lib/python2.7/site-packages:$PYTHONPATH
+}
