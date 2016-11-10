@@ -6,8 +6,9 @@ if [ -d ${HOME}/tech/data_osm ]; then
     export DATA_OSM=${HOME}/tech/data_osm
 fi
 
-# thefuck
+# terminal
 eval "$(thefuck --alias)"
+export HISTCONTROL=ignoredups
 
 # git helpers
 if [ -d ${HOME}/tech/git-helpers ]; then
