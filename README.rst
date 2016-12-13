@@ -54,6 +54,16 @@ Then:
     ln -s /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl ~/bin/subl
 
 
+Visual Studio code
+------------------
+
+.. code-block:: bash
+
+    cd Library/Application\ Support/Code/
+    mv User User_
+    ln -s ~/dotfiles/VSCode_User User
+
+
 Docker
 ------
 
