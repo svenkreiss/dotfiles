@@ -1,3 +1,21 @@
 // Place your settings in this file to overwrite the default settings
 {
+    "window.zoomLevel": 0,
+    "files.exclude": {
+        "**/*.pyc": true,
+        "**/__pycache__": true,
+        "**/*.egg-info": true,
+        "**/.vscode": true
+    },
+    "editor.rulers": [80],
+    "python.pythonPath": "${workspaceRoot}/venv/bin/python",
+    "python.autoComplete.extraPaths": [
+        "${workspaceRoot}/venv/lib/python2.7",
+        "${workspaceRoot}/venv/lib/python2.7/site-packages"
+    ],
+    "python.linting.pylintEnabled": false,
+    "python.linting.flake8Enabled": true,
+    "files.trimTrailingWhitespace": true,
+    "files.insertFinalNewline": true,
+    "workbench.statusBar.visible": false
 }
