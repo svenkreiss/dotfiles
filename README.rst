@@ -59,9 +59,14 @@ Visual Studio code
 
 .. code-block:: bash
 
-    cd Library/Application\ Support/Code/
+    cd ~/Library/Application\ Support/Code/
     mv User User_
     ln -s ~/dotfiles/VSCode_User User
+    cd -
+
+    # for better Python support in VSCode
+    pip install jedi
+    brew install ctags
 
 
 Docker
