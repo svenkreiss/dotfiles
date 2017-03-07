@@ -1184,9 +1184,9 @@
 	<key>NSWindow Frame SharedPreferences</key>
 	<string>252 171 796 473 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>43 636 1095 777 0 0 2560 1417 </string>
+	<string>43 10 1711 1407 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>1586 571 940 727 0 0 2560 1417 </string>
+	<string>1465 511 1095 777 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
 	<string>404 527 940 727 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 3</key>
@@ -2751,13 +2751,13 @@
 	<key>NoSyncTimeOfFirstLaunchOfVersionWithTip</key>
 	<real>481216130.83327401</real>
 	<key>OnlyWhenMoreTabs</key>
-	<true/>
+	<false/>
 	<key>OpenArrangementAtStartup</key>
 	<false/>
 	<key>OpenBookmark</key>
 	<false/>
 	<key>OpenNoWindowsAtStartup</key>
-	<false/>
+	<true/>
 	<key>OpenTmuxWindowsIn</key>
 	<integer>0</integer>
 	<key>PassOnControlClick</key>
@@ -2835,6 +2835,8 @@
 	<integer>4</integer>
 	<key>SwitchWindowModifier</key>
 	<integer>6</integer>
+	<key>TabStyle</key>
+	<integer>1</integer>
 	<key>TabViewType</key>
 	<integer>0</integer>
 	<key>ThreeFingerEmulates</key>
