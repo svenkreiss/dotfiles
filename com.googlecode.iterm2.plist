@@ -1182,9 +1182,9 @@
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>991 768 620 392 0 0 2560 1417 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>252 154 918 512 0 0 2560 1417 </string>
+	<string>252 171 796 473 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>43 0 2517 1417 0 0 2560 1417 </string>
+	<string>43 636 1095 777 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>1586 571 940 727 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
@@ -2551,11 +2551,11 @@
 			<key>Name</key>
 			<string>Sidewalk</string>
 			<key>Non Ascii Font</key>
-			<string>Monaco 10</string>
+			<string>Monaco 11</string>
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>Monaco 10</string>
+			<string>Monaco 11</string>
 			<key>Option Key Sends</key>
 			<integer>0</integer>
 			<key>Prompt Before Closing 2</key>
