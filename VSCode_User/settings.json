@@ -20,6 +20,8 @@
     "files.insertFinalNewline": true,
     "workbench.statusBar.visible": false,
     "workbench.activityBar.visible": false,
-    "editor.wordWrap": true,
+    "editor.wordWrap": "on",
+    "editor.minimap.enabled": false,
+    "editor.renderIndentGuides": false,
     "workbench.colorTheme": "Visual Studio Light"
 }
