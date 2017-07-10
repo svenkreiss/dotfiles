@@ -73,14 +73,6 @@ export PATH=/usr/local/bin:~/bin:$PATH
 export PATH=/Developer/NVIDIA/CUDA-7.5/bin:$PATH
 export DYLD_LIBRARY_PATH=/Developer/NVIDIA/CUDA-7.5/lib:$DYLD_LIBRARY_PATH
 
-# Machine Learning
-export PYTHONPATH=~/tech/Theano:$PYTHONPATH
-export THEANO_FLAGS="device=gpu"
-export PYTHONPATH=~/tech/pylearn2:$PYTHONPATH
-export PATH=~/tech/pylearn2/pylearn2/scripts:$PATH
-export PYLEARN2_DATA_PATH=${HOME}/tech/ml-data
-export PYLEARN2_VIEWER_COMMAND='open -Wn'
-
 # Go
 export GOPATH=${HOME}/tech/go
 export PATH=${HOME}/tech/go/bin:/usr/local/opt/go/libexec/bin:$PATH
@@ -119,8 +111,3 @@ if [ -d ${HOME}/tech/google-cloud-sdk ]; then
     # The next line enables shell command completion for gcloud.
     source "${HOME}/tech/google-cloud-sdk/completion.bash.inc"
 fi
-
-# opencv
-activate_opencv() {
-    export PYTHONPATH=/usr/local/lib/python2.7/site-packages:$PYTHONPATH
-}
