@@ -5,7 +5,7 @@ Install homebrew from http://brew.sh/
 
 .. code-block:: bash
 
-    brew install python git bash-completion
+    brew install python python3 git bash-completion wget
     pip install thefuck
 
     git clone https://github.com/svenkreiss/dotfiles.git

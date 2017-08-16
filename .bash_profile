@@ -86,7 +86,6 @@ export PS1='\[\033[01;31m\][\h]\[\033[01;34m\]:\W$(__git_ps1) >\[\033[00m\] ';
 export GIT_PS1_SHOWDIRTYSTATE=1
 configureGit() {
     git config --global color.ui auto
-    git config format.pretty oneline
     git config --global user.name "Sven Kreiss"
     git config --global user.email me@svenkreiss.com
     git config --global credential.helper osxkeychain
