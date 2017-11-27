@@ -5,13 +5,16 @@ Install homebrew from http://brew.sh/
 
 .. code-block:: bash
 
-    brew install python python3 git bash-completion wget
+    wget https://bootstrap.pypa.io/get-pip.py
+    python get-pip.py
+
+    brew install python python3 git bash-completion wget npm
     pip install thefuck
 
     git clone https://github.com/svenkreiss/dotfiles.git
     touch .secrets
 
-    # add "source dotfiles/.bash_profile" to ~/.bash_profile
+    # add "source dotfiles/.bash_profile" to ~/.bash_profile with
     # echo "source dotfiles/.bash_profile" > .bash_profile
     configureGit()
 
@@ -22,6 +25,8 @@ Install homebrew from http://brew.sh/
     # python linting in Sublime needs global installs
     pip install flake8 hacking
     pip3 install flake8 hacking
+
+    pip install virtualenv
 
 
 iTerm2
@@ -68,6 +73,8 @@ Visual Studio code
     pip install jedi
     brew install ctags
 
+    # Extensions: Python, Latex Workshop (install BasicTex beforehand), C++
+
 
 Docker
 ------
@@ -86,7 +93,7 @@ Google Cloud
 
 .. code-block:: bash
 
-    curl https://sdk.cloud.google.com | bash  # when prompted, install to ~/tech/google-cloud-sdk
+    curl https://sdk.cloud.google.com | bash  # when prompted, install to ~/tech
     gcloud init  # select zone us-east1-b
     gcloud components update kubectl
 
