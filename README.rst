@@ -73,7 +73,7 @@ Visual Studio code
     pip install jedi
     brew install ctags
 
-    # Extensions: Python, Latex Workshop (install BasicTex beforehand), C++, SpellChecker, markdownlint
+    # Extensions: Python, Latex Workshop (install BasicTex beforehand), C++, Code Spell Checker, markdownlint
 
 
 Docker
