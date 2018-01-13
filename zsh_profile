@@ -11,9 +11,9 @@ eval "$(thefuck --alias)"
 export HISTCONTROL=ignoredups
 
 # git helpers
-if [ -d ${HOME}/tech/git-helpers ]; then
-    source ${HOME}/tech/git-helpers/.git-rc
-fi
+#if [ -d ${HOME}/tech/git-helpers ]; then
+#    source ${HOME}/tech/git-helpers/.git-rc
+#fi
 
 # torch
 if [ -d ${HOME}/torch ]; then
