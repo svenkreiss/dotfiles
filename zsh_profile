@@ -9,6 +9,8 @@ fi
 # terminal
 eval "$(thefuck --alias)"
 export HISTCONTROL=ignoredups
+# add hostname to right prompt
+export RPROMPT='%{$fg[cyan]%}%m%{$reset_color%}'
 
 # git helpers
 #if [ -d ${HOME}/tech/git-helpers ]; then
