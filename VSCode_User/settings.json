@@ -9,7 +9,8 @@
         "build/": true,
         "**/.coverage.*": true,
         ".ipynb_checkpoints/": true,
-        ".pytest_cache/": true
+        ".pytest_cache/": true,
+        "venv*/": true
     },
     "editor.rulers": [80],
     "python.pythonPath": "${workspaceRoot}/venv/bin/python",
