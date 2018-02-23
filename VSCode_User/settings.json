@@ -10,6 +10,7 @@
         "**/.coverage.*": true,
         ".ipynb_checkpoints/": true,
         ".pytest_cache/": true,
+        ".eggs/": true,
         "venv*/": true
     },
     "editor.rulers": [80],
