@@ -11,6 +11,7 @@
         ".ipynb_checkpoints/": true,
         ".pytest_cache/": true,
         ".eggs/": true,
+        "dask-worker-space/": true,
         "venv*/": true
     },
     "editor.rulers": [80],
