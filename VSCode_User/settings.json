@@ -12,6 +12,8 @@
         ".pytest_cache/": true,
         ".eggs/": true,
         "dask-worker-space/": true,
+        "pelican.pid": true,
+        "srv.pid": true,
         "venv*/": true
     },
     "editor.rulers": [80],
@@ -24,7 +26,7 @@
     "python.linting.flake8Enabled": true,
     "files.trimTrailingWhitespace": true,
     "files.insertFinalNewline": true,
-    "workbench.statusBar.visible": true,
+    "workbench.statusBar.visible": false,
     "workbench.activityBar.visible": false,
     "editor.wordWrap": "on",
     "editor.minimap.enabled": false,

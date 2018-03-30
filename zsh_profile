@@ -37,6 +37,8 @@ va() {
         source venv/bin/activate
     elif [ -d venv2 ]; then
         source venv2/bin/activate
+    elif [ -d .venv ]; then
+        source .venv/bin/activate
     fi
 }
 
