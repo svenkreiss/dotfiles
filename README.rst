@@ -5,10 +5,9 @@ Install homebrew from http://brew.sh/
 
 .. code-block:: bash
 
-    wget https://bootstrap.pypa.io/get-pip.py
-    python get-pip.py
+    brew install python python2 python3 git bash-completion wget npm
+    python -m pip install --upgrade pip  # also see: https://docs.brew.sh/Homebrew-and-Python
 
-    brew install python python3 git bash-completion wget npm
     pip install thefuck
 
     git clone https://github.com/svenkreiss/dotfiles.git
@@ -36,10 +35,26 @@ Use ``dotfiles`` is the custom location for preferences. Set it in the first
 tab of the general preferences view.
 
 
+SSH
+---
+
+Modify ``~.ssh/config``:
+
+.. code-block::
+
+    Host *
+     AddKeysToAgent yes
+     UseKeychain yes
+     IdentityFile ~/.ssh/github_rsa
+
+``ssh-add -K ~/.ssh/github_rsa``
+
+
 Java
 ----
 
-Download JDK: http://www.oracle.com/technetwork/java/javase/downloads/index.html
+``brew cask install java``.
+DEPRECATED: Download JDK: http://www.oracle.com/technetwork/java/javase/downloads/index.html
 
 
 Sublime Text
@@ -109,3 +124,51 @@ Git Helpers
 
     cd tech; git clone https://github.com/ryan-williams/git-helpers/
     pip install -r ~/tech/git-helpers/requirements.txt
+
+
+Docs
+----
+
+.. code-block:: bash
+
+    npm install -g live-server
+
+    # use in Pelican develop-server.sh:
+    live-server . --port $port --host 127.0.0.1 --no-browser &
+
+
+Computer Vision Tools
+---------------------
+
+MS COCO:
+
+.. code-block:: bash
+
+    cd ~/tech/data_mscoco
+    gsutil ls gs://images.cocodataset.org  # to list available directories
+
+    mkdir val2017
+    gsutil -m rsync gs://images.cocodataset.org/val2017 val2017
+
+    mkdir train2017
+    gsutil -m rsync gs://images.cocodataset.org/train2017 train2017
+
+    gsutil cp gs://images.cocodataset.org/annotations/annotations_trainval2017.zip .
+    unzip annotations_trainval2017.zip
+
+For virtualenv:
+
+.. code-block:: bash
+
+    pip install cython
+    pip install 'git+https://github.com/cocodataset/cocoapi.git@master#subdirectory=PythonAPI'
+
+    python -c "import torchvision; torchvision.datasets.CIFAR10(root='../data_cifar10', download=True)"
+
+
+ImageNet:
+
+.. code-block:: bash
+
+    cd ~/tech/data_imagenet
+    wget http://image-net.org/Annotation/Annotation.tar.gz
