@@ -8,28 +8,31 @@ Install homebrew from http://brew.sh/
     brew install python python2 python3 git bash-completion wget npm
     python -m pip install --upgrade pip  # also see: https://docs.brew.sh/Homebrew-and-Python
 
-    pip install thefuck
+    pip3 install thefuck
 
     git clone https://github.com/svenkreiss/dotfiles.git
     touch .secrets
 
-    # add "source dotfiles/.bash_profile" to ~/.bash_profile with
-    # echo "source dotfiles/.bash_profile" > .bash_profile
-    configureGit()
+    # add "source dotfiles/bash_profile" to ~/.bash_profile with
+    echo "source dotfiles/bash_profile" >> .bash_profile
+
+    configureGit
 
     # faster window animation speed
     defaults write -g NSWindowResizeTime -float 0.01
     # to revert: defaults delete -g NSWindowResizeTime
 
     # python linting in Sublime needs global installs
-    pip install flake8 hacking
-    pip3 install flake8 hacking
+    pip install hacking
+    pip3 install hacking
 
     pip install virtualenv
 
 
 iTerm2
 ------
+
+Download: https://www.iterm2.com/downloads.html
 
 Use ``dotfiles`` is the custom location for preferences. Set it in the first
 tab of the general preferences view.
@@ -54,7 +57,6 @@ Java
 ----
 
 ``brew cask install java``.
-DEPRECATED: Download JDK: http://www.oracle.com/technetwork/java/javase/downloads/index.html
 
 
 Sublime Text
@@ -74,6 +76,12 @@ Then:
     ln -s /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl ~/bin/subl
 
 
+BasicTex
+--------
+
+Download from: http://www.tug.org/mactex/morepackages.html
+
+
 Visual Studio code
 ------------------
 
@@ -88,19 +96,13 @@ Visual Studio code
     pip install jedi
     brew install ctags
 
-    # Extensions: Python, Latex Workshop (install BasicTex beforehand), C++, Code Spell Checker, markdownlint
+    # Extensions: Python, Latex Workshop (install BasicTex beforehand), C++, Code Spell Checker
 
 
 Docker
 ------
 
-Install Docker Machine from https://docs.docker.com/machine/install-machine/
-and VirtualBox from https://www.virtualbox.org/wiki/Downloads
-
-.. code-block:: bash
-
-    docker-machine create --driver=virtualbox default
-    eval $(docker-machine env)
+Install Docker-for-Mac.
 
 
 Google Cloud
@@ -108,7 +110,7 @@ Google Cloud
 
 .. code-block:: bash
 
-    curl https://sdk.cloud.google.com | bash  # when prompted, install to ~/tech
+    curl https://sdk.cloud.google.com | bash
     gcloud init  # select zone us-east1-b
     gcloud components update kubectl
 
@@ -117,24 +119,29 @@ Google Cloud
     gcloud container clusters get-credentials CLUSTER_NAME
 
 
-Git Helpers
------------
+Oh my zsh
+---------
 
 .. code-block:: bash
 
-    cd tech; git clone https://github.com/ryan-williams/git-helpers/
-    pip install -r ~/tech/git-helpers/requirements.txt
+    sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+    echo "source dotfiles/zsh_profile" >> .zshrc
 
 
-Docs
-----
+Pelican
+-------
 
 .. code-block:: bash
 
-    npm install -g live-server
+    cd tech
+    git clone git@github.com:svenkreiss/pure.git pelican-theme-pure
+    git clone git@github.com:svenkreiss/pelican-plugins.git --recursive
+    npm install -g browser-sync
 
-    # use in Pelican develop-server.sh:
-    live-server . --port $port --host 127.0.0.1 --no-browser &
+    npm install font-awesome katex
+    cp -r node_modules/katex/dist/* content/extras/katex/
+    cp -r node_modules/font-awesome/css content/extras/font-awesome/
+    cp -r node_modules/font-awesome/fonts content/extras/font-awesome/
 
 
 Computer Vision Tools
