@@ -112,3 +112,6 @@ if [ -d ${HOME}/tech/google-cloud-sdk ]; then
     # The next line enables shell command completion for gcloud.
     source "${HOME}/tech/google-cloud-sdk/completion.bash.inc"
 fi
+
+# plotting inside of iterm2
+export MPLBACKEND="module://itermplot"
