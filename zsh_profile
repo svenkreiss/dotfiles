@@ -7,7 +7,11 @@ if [ -d ${HOME}/tech/data_osm ]; then
 fi
 
 # terminal
-eval "$(thefuck --alias)"
+if [ -e .local/bin/thefuck ]; then
+    eval "$(.local/bin/thefuck --alias)"
+else
+    eval "$(thefuck --alias)"
+fi
 export HISTCONTROL=ignoredups
 # add hostname to right prompt
 export RPROMPT='%{$fg[cyan]%}%m%{$reset_color%}'

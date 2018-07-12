@@ -5,8 +5,15 @@ Install homebrew from http://brew.sh/
 
 .. code-block:: bash
 
+    # Mac specific
     brew install python python2 python3 git bash-completion wget npm
     python -m pip install --upgrade pip  # also see: https://docs.brew.sh/Homebrew-and-Python
+    # faster window animation speed:
+    defaults write -g NSWindowResizeTime -float 0.01
+    # to revert: defaults delete -g NSWindowResizeTime
+
+    # Ubuntu
+    sudo apt install python3-pip python3-venv zsh byobu
 
     pip3 install thefuck
 
@@ -17,16 +24,6 @@ Install homebrew from http://brew.sh/
     echo "source dotfiles/bash_profile" >> .bash_profile
 
     configureGit
-
-    # faster window animation speed
-    defaults write -g NSWindowResizeTime -float 0.01
-    # to revert: defaults delete -g NSWindowResizeTime
-
-    # python linting in Sublime needs global installs
-    pip install hacking
-    pip3 install hacking
-
-    pip install virtualenv
 
 
 iTerm2
