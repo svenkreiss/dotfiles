@@ -20,11 +20,6 @@ Install homebrew from http://brew.sh/
     git clone https://github.com/svenkreiss/dotfiles.git
     touch .secrets
 
-    # add "source dotfiles/bash_profile" to ~/.bash_profile with
-    echo "source dotfiles/bash_profile" >> .bash_profile
-
-    configureGit
-
 
 iTerm2
 ------
@@ -116,13 +111,19 @@ Google Cloud
     gcloud container clusters get-credentials CLUSTER_NAME
 
 
-Oh my zsh
----------
+Shell
+-----
 
 .. code-block:: bash
 
+    # bash
+    echo "source ${HOME}/dotfiles/bash_profile" >> .bash_profile
+    configureGit
+
+    # zsh
     sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-    echo "source dotfiles/zsh_profile" >> .zshrc
+    echo "source ${HOME}/dotfiles/zsh_profile" >> .zshrc
+    configureGit
 
 
 Pelican
