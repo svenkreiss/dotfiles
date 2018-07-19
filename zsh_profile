@@ -1,5 +1,5 @@
 # IMPORTS
-source .secrets
+source ~/.secrets
 
 # data
 if [ -d ${HOME}/tech/data_osm ]; then

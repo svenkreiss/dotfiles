@@ -13,7 +13,7 @@ Install homebrew from http://brew.sh/
     # to revert: defaults delete -g NSWindowResizeTime
 
     # Ubuntu
-    sudo apt install python3-pip python3-venv zsh byobu
+    sudo apt install -y python3-pip python3-venv zsh byobu curl git htop
 
     pip3 install thefuck
 
