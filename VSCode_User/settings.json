@@ -2,19 +2,20 @@
 {
     "window.zoomLevel": -1,
     "files.exclude": {
-        "**/*.pyc": true,
-        "**/__pycache__": true,
-        "**/*.egg-info": true,
-        "**/.vscode": true,
-        "build/": true,
-        "**/.coverage.*": true,
-        ".ipynb_checkpoints/": true,
-        ".pytest_cache/": true,
-        ".eggs/": true,
-        "dask-worker-space/": true,
-        "pelican.pid": true,
-        "srv.pid": true,
-        "venv*/": true
+      ".eggs/": true,
+      ".ipynb_checkpoints/": true,
+      ".mypy_cache/": true,
+      ".pytest_cache/": true,
+      "**/__pycache__": true,
+      "**/.coverage.*": true,
+      "**/.vscode": true,
+      "**/*.egg-info": true,
+      "**/*.pyc": true,
+      "build/": true,
+      "dask-worker-space/": true,
+      "pelican.pid": true,
+      "srv.pid": true,
+      "venv*/": true
     },
     "editor.rulers": [80],
     "python.pythonPath": "${workspaceRoot}/venv/bin/python",
@@ -32,36 +33,66 @@
     "editor.minimap.enabled": false,
     "editor.renderIndentGuides": false,
     "workbench.colorTheme": "Visual Studio Light",
-    "latex-workshop.latex.toolchain": [
-        {
-          "command": "pdflatex",
-          "args": [
-            "-synctex=1",
-            "-interaction=nonstopmode",
-            "-file-line-error",
-            "%DOC%"
-          ]
-        }, {
-          "command": "bibtex",
-          "args": [
-            "%DOCFILE%"
-          ]
-        }, {
-          "command": "pdflatex",
-          "args": [
-            "-synctex=1",
-            "-interaction=nonstopmode",
-            "-file-line-error",
-            "%DOC%"
-          ]
-        }, {
-          "command": "pdflatex",
-          "args": [
-            "-synctex=1",
-            "-interaction=nonstopmode",
-            "-file-line-error",
-            "%DOC%"
-          ]
-        }
-      ],
-    }
+    "typescript.updateImportsOnFileMove.enabled": "never",
+    "latex-workshop.message.update.show": false,
+    "latex-workshop.latex.recipes": [
+      {
+        "name": "latexmk",
+        "tools": [
+          "latexmk"
+        ]
+      },
+      {
+        "name": "pdflatex -> biber -> pdflatex*2",
+        "tools": [
+          "pdflatex",
+          "biber",
+          "pdflatex",
+          "pdflatex"
+        ]
+      },
+    ],
+    "latex-workshop.view.pdf.viewer": "tab",
+    "latex-workshop.latex.tools": [
+      {
+        "name": "latexmk",
+        "command": "latexmk",
+        "args": [
+          "-f",
+          "-synctex=1",
+          "-interaction=nonstopmode",
+          "-file-line-error",
+          "-pdf",
+          "%DOC%"
+        ]
+      },
+      {
+        "name": "pdflatex",
+        "command": "pdflatex",
+        "args": [
+          "-synctex=1",
+          "-interaction=nonstopmode",
+          "-file-line-error",
+          "%DOC%"
+        ]
+      },
+      {
+        "name": "bibtex",
+        "command": "bibtex",
+        "args": [
+          "%DOCFILE%"
+        ]
+      },
+      {
+        "name": "biber",
+        "command": "biber",
+        "args": [
+          "%DOCFILE%"
+        ]
+      }
+    ],
+    "revealjs.theme": "white",
+    "revealjs.slideNumber": true,
+    "spellright.configurationScope": "user",
+    "spellright.language": ["en"],
+}
