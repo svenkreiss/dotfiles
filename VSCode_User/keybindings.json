@@ -1,7 +1,6 @@
 // Place your key bindings in this file to overwrite the defaults
 [{
-    "key": "shift+cmd+b",
+    "key": "ctrl+cmd+b",
     "command": "workbench.action.toggleStatusbarVisibility",
     "when": "editorTextFocus"
-}
-]
+}]

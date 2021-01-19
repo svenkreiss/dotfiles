@@ -15,10 +15,8 @@ export HISTCONTROL=ignoredups
 # add hostname to right prompt
 export RPROMPT='%{$fg[cyan]%}%m%{$reset_color%}'
 
-# git helpers
-#if [ -d ${HOME}/tech/git-helpers ]; then
-#    source ${HOME}/tech/git-helpers/.git-rc
-#fi
+# git
+export git_main_branch=main
 
 # torch
 if [ -d ${HOME}/torch ]; then
@@ -75,10 +73,6 @@ export WORD2VEC_FILENAME=${HOME}/tech/data_word2vec/GoogleNews-vectors-negative3
 
 # for homebrew
 export PATH=/usr/local/bin:~/bin:$PATH
-
-# Cuda
-export PATH=/Developer/NVIDIA/CUDA-7.5/bin:$PATH
-export DYLD_LIBRARY_PATH=/Developer/NVIDIA/CUDA-7.5/lib:$DYLD_LIBRARY_PATH
 
 # Go
 export GOPATH=${HOME}/tech/go
