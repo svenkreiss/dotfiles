@@ -1,7 +1,6 @@
 // Place your settings in this file to overwrite the default settings
 {
-    "window.zoomLevel": 0,
-    "files.exclude": {
+  "files.exclude": {
       ".eggs/": true,
       ".ipynb_checkpoints/": true,
       ".mypy_cache/": true,
@@ -117,7 +116,6 @@
       "latex",
       "plaintext"
     ],
-    "C_Cpp.updateChannel": "Insiders",
     "files.trimTrailingWhitespace": true,
     "telemetry.enableTelemetry": false,
     "C_Cpp.default.includePath": [
@@ -139,6 +137,7 @@
       "arxiv",
       "asarray",
       "astype",
+      "asyncio",
       "auditwheel",
       "bare",
       "bare jrnl tex",
@@ -236,6 +235,8 @@
       "inet",
       "inoue",
       "insafutdinov",
+      "ioloop",
+      "iostream",
       "ipynb",
       "iscrowd",
       "isfinite",
@@ -280,6 +281,7 @@
       "nargs",
       "nbdime",
       "nbval",
+      "nccl",
       "ndimage",
       "nesterov",
       "neuralet",
@@ -308,11 +310,13 @@
       "po",
       "po inet",
       "posetrack",
+      "prefetch",
       "pretrained",
       "pslatex",
       "pycocotools",
       "pycodestyle",
       "pylint",
+      "pyplot",
       "pysparkling",
       "pytest",
       "pythonjsonlogger",
@@ -343,6 +347,7 @@
       "subfigure",
       "subfigures",
       "svai",
+      "svenkreiss",
       "szasz",
       "szegedy",
       "tcaf",
@@ -362,6 +367,7 @@
       "ungroup",
       "unnormalized",
       "unpatched",
+      "unsqueeze",
       "unsubscriptable",
       "upsample",
       "upsampling",
@@ -377,6 +383,8 @@
       "ylabel",
       "ylim",
       "yscale",
+      "zlabel",
+      "zlim",
       "zonklar",
       "zorder"
     ],
@@ -385,5 +393,13 @@
     "jupyter.textOutputLimit": 2000000,
     "jupyter.alwaysTrustNotebooks": true,
     "jupyter.maxOutputSize": 4000,
-    "workbench.editorAssociations": [],
+    "workbench.editorAssociations": [
+      {"viewType": "jupyter-notebook", "filenamePattern": "*.ipynb"},
+    ],
+    "explorer.confirmDelete": false,
+    "jupyter.disableJupyterAutoStart": true,
+    "python.insidersChannel": "weekly",
+    "jupyter.insidersChannel": "weekly",
+    "window.zoomLevel": 0,
+    "jupyter.changeDirOnImportExport": true,
 }

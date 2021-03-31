@@ -86,6 +86,7 @@ configureGit()
     git config --global user.email me@svenkreiss.com
     git config --global credential.helper osxkeychain
     git config --global push.default simple
+    git config --global init.defaultBranch main
 }
 
 ### Added by the Heroku Toolbelt
