@@ -30,6 +30,10 @@ iTerm2
 
 Download: https://www.iterm2.com/downloads.html
 
+Use "Compact" layout.
+Do not show pane bar.
+Switch terminal colors to "Tango Light" and remove "lighten when bold" tickmark.
+
 Use ``dotfiles`` is the custom location for preferences. Set it in the first
 tab of the general preferences view.
 
