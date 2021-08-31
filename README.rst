@@ -1,13 +1,17 @@
 Misc
 ----
 
+Set dock to left.
+Increase "Key Repeat" to fastest. Switch Opt and Control keys.
+Assign "caps lock" key to "control.
+
 Install homebrew from http://brew.sh/
 
 .. code-block:: bash
 
     # Mac specific
-    brew install python python2 python3 git bash-completion wget npm
-    python -m pip install --upgrade pip  # also see: https://docs.brew.sh/Homebrew-and-Python
+    brew install python3 git bash-completion wget npm cmake protobuf
+    python3 -m pip install --upgrade setuptools pip  # also see: https://docs.brew.sh/Homebrew-and-Python
     # faster window animation speed:
     defaults write -g NSWindowResizeTime -float 0.01
     # to revert: defaults delete -g NSWindowResizeTime
@@ -49,23 +53,6 @@ Java
 ----
 
 ``brew cask install java``.
-
-
-Sublime Text
-------------
-
-Install the package manager first: https://packagecontrol.io/installation
-Then:
-
-.. code-block:: bash
-
-    mv \
-        ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User \
-        ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User.backup
-    ln -s ~/dotfiles/Sublime_User ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User
-
-    mkdir bin
-    ln -s /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl ~/bin/subl
 
 
 BasicTex
